@@ -60,13 +60,47 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
     <title>View Record</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <style type="text/css">
+        
+
+body {
+    background-image: url('photo/4.avif'); /* Mets le bon chemin */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixe l'image pendant le scroll */
+    display: flex;
+    color :white;
+
+    flex-direction: column;
+}
         .wrapper{
             width: 500px;
             margin: 0 auto;
         }
+        label{
+            font-size : 2em;
+        }
+        p{
+            font-size : 1.5rem;
+        }
+        footer {
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: ;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
     </style>
 </head>
 <body>
+
+<?php 
+    include("navbar.php");
+?>
+
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -103,5 +137,10 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
             </div>        
         </div>
     </div>
+    <footer class="bg-white text-center tex-secondary py-1 position-fixed bottom-0 w-100">
+        <div class="container">
+            <p class="text-center">© 2025 R¤save - All rights reserved</p>
+        </div>
+    </footer>
 </body>
 </html>

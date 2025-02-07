@@ -40,18 +40,9 @@
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <h1 class="navbar">R¤save</h1>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="home.php">Voir les personnelles</a></li>
-            <li><a href="create.php">Inscrire</a></li>
-        </ul>
-    </div>
-</nav>
+<?php 
+    include("navbar.php");
+?>
 
 <!-- Section principale -->
 <div class="hero-section">

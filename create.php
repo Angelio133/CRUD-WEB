@@ -117,10 +117,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" href="create.css">
     <style type="text/css">
         
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
+        body {
+            font-family: 'Arial', sans-serif;
+        }   
         .wrapper {
             min-height: 100%;
             display: flex;
@@ -138,23 +137,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     background: ;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
     </style>
 </head>
 <body>
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <h1 class="navbar">R¤save</h1>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="home.php">Voir les personnelles</a></li>
-            <li><a href="create.php">S'incrire</a></li>
-        </ul>
-    </div>
-</nav>
+<?php 
+    include("navbar.php");
+?>
 
     <div class="wrapper">
         <div class="container-fluid">
