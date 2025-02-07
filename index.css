@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('photo/4.avif'); /* Mets le bon chemin */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixe l'image pendant le scroll */
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background: transparent !important; /* Supprime le fond */
+    border: none; /* Supprime la bordure */
+    box-shadow: none; /* Supprime l'ombre éventuelle */
+}
+.navbar {
+    background: transparent !important; /* Rendre le fond transparent */
+    border: 2px solid white; /* Ajouter une bordure blanche */
+    border-radius: 10px; /* Arrondir les coins */
+    padding: 10px 20px; /* Ajouter un peu d'espace à l'intérieur */
+    margin: 10px auto; /* Centrer la navbar */
+    width: 90%; /* Ajuster la largeur pour qu'elle ne prenne pas tout l'écran */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2); /* Effet d'ombre pour du style */
+}
+
+/* Changer la couleur des liens */
+.navbar-default .navbar-nav > li > a {
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Ajouter une bordure autour des éléments du menu */
+.navbar-nav {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le style */
+    padding: 5px;
+}
+.navbar-navbar-default{
+
+        margin-top: 50px;
+}
+
+/* Espacement entre les liens */
+.navbar-nav > li {
+    margin: 0 10px;
+}
+nav ul{
+    background-color: red;
+    margin-top: 15px;
+}
+nav ul li a {
+   text-decoration: none; 
+   color: rgba(32, 15, 218, 0.532);        
+}
+
+
+.hero-section {
+    flex: 1; /* Permet à la section de s'étirer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
